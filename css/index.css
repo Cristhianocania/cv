@@ -1103,11 +1103,12 @@ form button:hover{
 }
 .contact-info-icon-text h6{
     font-size: 15px;
-    opacity: .8;
+    user-select: text;
+  
 }
 .contact-info-icon-text p{
     font-size: 14px;
-    opacity: .7;
+    user-select: text;
 }
 .icon{
     height:40px;
@@ -1157,12 +1158,12 @@ form button:hover{
     justify-content: center;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
-    background: whitesmoke;
+    background: white;
 }
 .color-panel img{
     height: 40px; 
     width:40px;
-    padding:2px;
+    padding:5px;
     animation: rotate 2s linear infinite;
 }
 .colors ul{
