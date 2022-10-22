@@ -591,7 +591,7 @@ body{
     display: flexbox;
     box-shadow:0px 0px 25px rgb(0,0,0,.05);
     position: relative;
-    text-align:left;
+    text-align:flex;
     z-index: 2;
     border-radius: 15px;
     overflow: hidden;
@@ -627,17 +627,18 @@ body{
     z-index:2;
 }
 .service-description h1{
-    padding: 10px;
-    margin: 5px;
+   
+   
     font-weight: 200;
     font-size: 25px;
+    color:lightcyan;
 }
 
 .service-description h2{
-    padding: 10px;
+   
     margin: 5px;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
@@ -720,7 +721,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:95%;
+    width:50%;
     border-radius: 10px;
     background: #c70039;
 }
@@ -734,11 +735,25 @@ body{
     font-family: poppins;
     justify-content: center;
     transition: all .4s ease;
-    width:100%;
+    width:45%;
     border-radius: 10px;
     background: #c70039;
 }
-.adobe-progress{
+.c-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    justify-content: center;
+    transition: all .4s ease;
+    width:70%;
+    border-radius: 10px;
+    background: #c70039;
+}
+.sql-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -746,25 +761,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .4s ease;
-    width:83%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.php-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:85%;
+    width:62%;
     border-radius: 10px;
     background: #c70039;
     transition: all .4s ease;
 }
-.jquery-progress{
+.office-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -777,7 +779,7 @@ body{
     border-radius: 10px;
     background: #c70039;
 }
-.seo-progress{
+.ingles-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -785,7 +787,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:84%;
+    width:50%;
     border-radius: 10px;
     transition: all .4s ease;
     background: #c70039;
@@ -1158,7 +1160,7 @@ form button:hover{
     justify-content: center;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
-    background: white;
+    background: whitesmoke;
 }
 .color-panel img{
     height: 40px; 
