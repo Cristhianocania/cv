@@ -8,8 +8,13 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
 
+
+
+
+
+
 .modal{
-    position:absolute;
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -18,14 +23,22 @@
     display: flex;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.6s;
+
+    --transform:translateY(-100vh);
+    --transition: trnasform .8s;
 }
 
 
 .modal--show{
     opacity: 1;
     pointer-events: unset;
-}
+    transition: opacity 0.6s .9s;
+    --transform:translateY(0);
+       --transition: trnasform .8s .8s;
 
+
+}
 .modalcontainer{
     margin: auto;
     width: 90%;
@@ -38,6 +51,8 @@
     gap: 1em;
     place-items: center;
     grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition)
 }
 .modal_title{
     margin-bottom: 2.5rem;
@@ -97,6 +112,8 @@
     right: 0;
   }
 
+  
+
 *{
     padding: 0%;
     margin: 0%;
@@ -147,6 +164,7 @@ input[type=number] {
       width: 100%;
   }
 body{
+    position: relative;
     user-select: none;
     height: auto;
     overflow-x: hidden;
@@ -640,6 +658,7 @@ body{
 
 
 .services-heading{
+    position: relative;
     height: auto;
     width: 100%;
     text-align: center;
@@ -664,13 +683,33 @@ body{
     color: whitesmoke;
 }
 .services-content{
+   
     height: relative;
     width: 95%;
     overflow: hidden;
     text-align: center;
     padding:3.5%;
+    opacity: 1;
+    
+
+
    
 }
+
+.services-content--dis{
+
+
+    height: relative;
+    width: 95%;
+    overflow: hidden;
+    text-align: center;
+    padding:3.5%;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+
 .service{
     height:relative;
     width:100%;
