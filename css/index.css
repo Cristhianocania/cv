@@ -19,7 +19,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #910000bd;
+    background-color: black;
     display: flex;
     opacity: 0;
     pointer-events: none;
@@ -41,9 +41,9 @@
 }
 .modalcontainer{
     margin: auto;
-    width: 90%;
-    max-width: 600px;
-    max-height:  90%; 
+    width: 100%;
+    max-width: 900px;
+    max-height:  100%; 
     border-radius: 6px;
     padding: 3em 2.5em;
     background-color: #111111bd;
@@ -56,23 +56,27 @@
 }
 .modal_title{
     margin-bottom: 2.5rem;
+    color: white;
 }
 .modal_paragraph{
     margin-bottom: 10px;
+    color: wheat;
 }
 .modal_close{
+    position: relative;
     color: black;
-    padding: 1em 3 em;
-    border: 1px solid;
-    border-radius: 6px;
+    padding: 2em 3 em;
+    border: 5px solid;
+    border-radius: 5px;
     display: inline-block;
-    font-weight: 300;
+    font-weight: 250;
     transition: background-color    .3s;
+ 
 
 }
 .modal_close:hover{
     color: red;
-    background-color: whitesmoke;
+    background-color: black;
 }
 .btn_modal {
     display: inline-block;

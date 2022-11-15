@@ -1,7 +1,9 @@
 const openModal = document.querySelector('.btn_modal');
 const modal = document.querySelector('.modal');
-const content=document.querySelector('.services-content');
+
 const closeModal = document.querySelector('.modal_close');
+
+const content=document.querySelector('.services-content');
 
 
 openModal.addEventListener('click',(e)=>{
