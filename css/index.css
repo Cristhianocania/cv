@@ -16,7 +16,8 @@
 .modal{
 
     position:fixed;
-   
+    user-select: text;
+
     top: 0;
     left: 0;
     right: 0;
@@ -159,10 +160,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
+/* Firefox 
 input[type=number] {
   -moz-appearance: textfield;
 }
+*/
+
   html{
     background: #212121;
     
@@ -547,6 +550,12 @@ body{
     color: #c70039;
     transition: all .4s ease;
 }
+
+.color2{
+    color: #191919;
+    
+}
+
 #about{
     background-color: #101010;
     display: none;
@@ -690,6 +699,7 @@ body{
     padding-bottom: 30px;
     padding-top: 30px;
     font-weight: 900;
+    user-select: text;
 
 }
 .about-first-paragraph {
@@ -705,9 +715,10 @@ body{
    
     height: relative;
     width: 95%;
-    overflow: hidden;
+    user-select: text;
+   
     text-align: center;
-    padding:3.5%;
+    padding:0.5%;
     opacity: 1;
     
 
@@ -718,13 +729,14 @@ body{
 .services-content--dis{
 
 
-    height: relative;
+   
     width: 95%;
-    overflow: hidden;
+    user-select: text;
     text-align: center;
-    padding:3.5%;
+    padding:0.5%;
     opacity: 0;
     pointer-events: none;
+    
 
 }
 
@@ -734,7 +746,7 @@ body{
     width:100%;
     margin: 1.2%;
     background-color: #191919;
-    display: flexbox;
+    display:block;
     box-shadow:0px 0px 25px rgb(0,0,0,.05);
     position: relative;
     text-align:flex;
@@ -998,23 +1010,46 @@ body{
     transition:  scale .5s ease;
 }
 
+
+#educacion{
+
+   
+    padding:3.5%;
+    opacity: 1;
+    
+
+}
+
+
+#educacion-chau--dis{
+
+    transition: all .8s ease;
+}
+
 #blog{
-    background: #101010;
+
+
+    background-color: #101010;
     display: none;
-    color:whitesmoke;
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 .blog-content{
+   
     display: flex;
-    flex-wrap: wrap;
+    flex-direction:column;
     align-items: center;
+    color: whitesmoke;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    padding:30px;
 }
 .blogs{
     height: 420px;
     width: 40%;
-    margin: 20px;
+    margin: 15px;
     border-radius: 8px;
     position: relative;
     overflow: hidden;
@@ -1481,6 +1516,7 @@ For devices with smaller width like mobile phone
         height: auto;
         width: 100%;
         padding:30px;
+        user-select: text;
     }
     .about-header{
         color: whitesmoke;
@@ -1490,6 +1526,7 @@ For devices with smaller width like mobile phone
         font-family: raleway;
         padding:10px;
         font-weight: 900;
+        user-select: text;
     }
     .about-first-paragraph{
         color: whitesmoke;
@@ -1884,6 +1921,7 @@ for tabs and large phones
     
     }
     #about-content{
+        user-select: text;
         display: flex;
         flex-direction:column;
         align-items: center;
@@ -1900,6 +1938,7 @@ for tabs and large phones
         font-family: raleway;
         padding:15px;
         font-weight: 900;
+        user-select: text;
     }
     .about-first-paragraph{
         color: whitesmoke;
@@ -2035,6 +2074,7 @@ for tabs and large phones
                 margin-top: 20px;
                 margin-bottom: 20px;
                 position: relative;
+                user-select: text;
             }
             .blogs .img{
                 height: 60%;
@@ -2071,6 +2111,7 @@ for tabs and large phones
               background-color: #050505;
               padding: 10px;
               transition: all .5s ease;
+              user-select: text;
             }
             .blog-text h3{
               font-size: 28px;
@@ -2086,6 +2127,7 @@ for tabs and large phones
                 height: 85%;
                 padding: 20px;
                 letter-spacing: 1px;
+                user-select: text;
               }
             .blogs:hover .img{
                   transform: translateY(0%);
@@ -2101,6 +2143,7 @@ for tabs and large phones
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                user-select: text;
             }
             .contact-info{
                 width: 70%;
@@ -2111,6 +2154,7 @@ for tabs and large phones
                 margin-bottom: 50px;
                 position: relative;
                 overflow: hidden;
+                user-select: text;
             }
             .contact-info::before{
                 content: "";
@@ -2300,6 +2344,7 @@ for tabs and large phones
         border-radius: 10px;
         overflow: hidden;
         animation: opacity 1.4s ease ;
+        user-select: text;
     }
     .service-img{
         text-align: center;

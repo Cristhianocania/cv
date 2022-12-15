@@ -26,6 +26,8 @@ const closeModal5 = document.querySelector('#close5');
 const menu =document.getElementById('navigation-bar');
 const content=document.querySelector('.services-content');
 
+const educacion =document.getElementById('educacion');
+
 
 
 openModal.addEventListener('click',(e)=>{
@@ -96,7 +98,8 @@ closeModal.addEventListener('click',(e)=>{
                         modal4.classList.add('modal--show');
                         content.classList.add('services-content--dis');
                         menu.hidden=true;
-                        
+                        educacion.hidden=true;
+
                         
                         });
                         
@@ -106,6 +109,7 @@ closeModal.addEventListener('click',(e)=>{
                             modal4.classList.remove('modal--show');
                             content.classList.remove('services-content--dis');
                             menu.hidden=false;
+                            educacion.hidden=false
                         
                             
                             });
@@ -114,9 +118,11 @@ closeModal.addEventListener('click',(e)=>{
 
                             openModal5.addEventListener('click',(e)=>{
                                 e.preventDefault();
+                                educacion.hidden=true;
                                 modal5.classList.add('modal--show');
                                 content.classList.add('services-content--dis');
                                 menu.hidden=true;
+                                
                                 
                                 
                                 });
@@ -127,6 +133,7 @@ closeModal.addEventListener('click',(e)=>{
                                     modal5.classList.remove('modal--show');
                                     content.classList.remove('services-content--dis')
                                     menu.hidden=false;
+                                    educacion.hidden=false;
                                 
                                     
                                     });
